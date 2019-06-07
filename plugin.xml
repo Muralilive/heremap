@@ -1,2 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.qwicksoft.heremap" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>heremap</name><js-module name="heremap" src="www/heremap.js"><clobbers target="cordova.plugins.heremap" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="heremap"><param name="android-package" value="com.qwicksoft.heremap.heremap" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/heremap.java" target-dir="src/com/qwicksoft/heremap/heremap" /></platform></plugin>
+<plugin id="com.qwicksoft.heremap" version="0.0.1"
+ xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+ <name>heremap</name>
+ <js-module name="heremap" src="www/heremap.js">
+    <clobbers target="cordova.plugins.heremap" />
+ </js-module>
+ <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+        <feature name="heremap">
+            <param name="android-package" value="com.qwicksoft.heremap.heremap" />
+        </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml">
+         <meta-data 
+             android:name="com.here.android.maps.appid" 
+             android:value="E9I2k9bdi9hwDQiIEUfi"/>
+           <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="FUmieiyVugKGZ-tQo-y2eA" />
+           <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="MrS+xlh+OjuHVb1tST+Rr2ORfhePC+SZrWrgLMOlnV083T99AiyAshXjfSfVXSzDfYgPDOo2u5Pe/o4xZ2w8KSzLcJv33yniPHz7CY6hN1mgH9WGOn0lMXG/VoqW8P7y/uY25IbBosFKnjvXntV9sZ4KlFxb0uWzQ+eLAXjKX0wkqs4I0Uj0Eari9FlVfmQAHRQdR4zSpA92JK0C0rO96iN54q/HREGj4qhTt6A8ElMfrog9FpipPUYOhrRlT+3Cdh0xWBLnz8OfMnZqH7n8lPiXpi1gpVz1og+B94qlBRpDdpxAjjr9/+DFFKnsTBfqrQbZEAkjXl50bKJxylHRJpRPxdCmJ2UFZsVwEf2vDoaUIctrVsIYpGJ9WxZg+C6iwLKNQViL1nE2O0V/FMLqOjHR3+nlHMgTE3Ro3X8+68wuEUUramDD+IENxVm/Sj0OCa2YW7Z0ltnAhrrNF09s34cI3ZPR3KPumJmo0sO7uENBx09kfZ8PaNk271ld+8Bpnmrf/+cKGJjtC2tlWrPPeVtMOi7u3vXpre8/3oIapZccEys99bpLM+eU1RnYzwcGXBgi/IpKIhK0C91CNVaygBDM5LYWGxrvFGLgQ9t/tAXorpd0AprVUhpPu0aeTW6mI2ON4AetxYpKFayyUAOE2Zr13QvYqmzuAH0p3RbzhsA=" />
+    </config-file>
+    <source-file src="src/android/plugin/here/maps/heremap.java" target-dir="src/com/qwicksoft/heremap/heremap" />
+ </platform>
+</plugin>
