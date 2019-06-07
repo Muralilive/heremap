@@ -1,0 +1,21 @@
+{
+  "name": "heremap",
+  "version": "0.0.1",
+  "description": "heremap developer",
+  "cordova": {
+    "id": "com.qwicksoft.heremap",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "heremap"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "heremap",
+  "license": "MIT"
+}
